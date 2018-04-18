@@ -1,10 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
-
-
-
 // declare function
 
 int sort(int &, int &, int &);
@@ -23,8 +19,6 @@ int main()
     sort( red, green, blue);
 
     
-// cout << "R: " << red << " G: " << green << " B: " << blue << endl;
-
 
     //DO NOT CHANGE WITHIN THIS AREA...
     cout<<"Rearranged....\n";
@@ -50,8 +44,10 @@ int sort(int & R , int & G, int & B)
   tempB = B;
 
 
+  // visualize the problem next time and psuedo code. 
+  // Draw flowchart diagram for each step. 
 
-    if ( G > R )
+    if ( R < G )
     {
         R = G;
 
@@ -59,7 +55,22 @@ int sort(int & R , int & G, int & B)
 
     }
 
- //   else if ( )
+    if ( R < B  )
+    {
+        B = R;
+        R = tempB;
+
+
+    }
+
+    if ( G < B )
+    {
+        tempG = G;
+        G = B;
+        B = tempG;
+
+
+    }
 
 
 
