@@ -1,6 +1,12 @@
 #include <iostream>
 using namespace std;
 
+// prototype function
+
+int swap ( int, int);
+
+
+
 int main()
 {
   //DO NOT CHANGE WITHIN THIS AREA...
@@ -18,4 +24,10 @@ int main()
   cout<<"RGB: "<<red<<","<<green<<","<<blue<<endl;
   return 0;
   //...END OF "DO NOT CHANGE" AREA
-}
+
+
+} // end main
+
+
+
+
